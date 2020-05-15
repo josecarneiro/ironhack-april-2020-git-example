@@ -5,11 +5,11 @@ const logger = require('morgan');
 const serveFavicon = require('serve-favicon');
 const indexRouter = require('./routes/index');
 
-console.log('Hey class!')
+console.log('Hey class!');
 
 const app = express();
 
-app.use(serveFavicon(join(__dirname, 'public/images', 'favicon.ico')));
+app.use(serveFavicon(join(__dirname, 'public/img', 'favicon.ico')));
 app.use(express.static(join(__dirname, 'public')));
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: true }));
