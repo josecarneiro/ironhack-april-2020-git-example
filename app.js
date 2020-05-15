@@ -5,6 +5,8 @@ const logger = require('morgan');
 const serveFavicon = require('serve-favicon');
 const indexRouter = require('./routes/index');
 
+console.log('Hey class!')
+
 const app = express();
 
 app.use(serveFavicon(join(__dirname, 'public/images', 'favicon.ico')));
